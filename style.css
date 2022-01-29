@@ -70,6 +70,12 @@ nav{
     justify-content: center;
     border: solid 2px;
     border-color: white;
+    background-color: #9FB0BF;
+}
+
+.navbar{
+    background-color: #9FB0BF;
+    border: none;
 }
 
 .opciones{
@@ -126,29 +132,16 @@ ul li:hover ul {
 
 .main{
     background-color: #9FB0BF;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     margin-top: -250px;
-}
-
-.containerI{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
 }
 
 .mainImg{
     width: 400px; height: 380px;
-    margin-right: 20px;
 }
 
 .mainText{
     width: 580px; height: 580px;
     margin-top: -100px;
-    margin-left: 20px;
 }
 
 h3 {
@@ -342,7 +335,7 @@ tr:hover td{
 } 
 
 .div14 { grid-area: 3 / 1 / 7 / 6; 
-    height: 530px;
+    height: 800px;
 }
 
 h4 {
@@ -354,6 +347,11 @@ h4 {
     font-weight: 200px;
     color: #3C3C3C;
     cursor: default;
+}
+
+.carousel{
+    width: 400px;
+    height: 400px;
 }
 
 .cajaOpiniones{
