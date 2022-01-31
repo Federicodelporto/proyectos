@@ -22,8 +22,15 @@
     <div class="grid1">
         <div class="div1">
             <header class="header">
-                <nav>
-                    <img class="headerImg" src="./Imagenes/Logo.jpg" alt="Logo Tienda de Flores">
+                <div class="logoTel">
+                    <div>
+                        <img class="headerImg" src="./Imagenes/Logo.jpg" alt="Logo Tienda de Flores">
+                    </div>
+                    <div class="tlfno1">
+                        <p class="headerContacto"> TEL: 114323-0780</p>
+                    </div>
+                </div>
+                <div class="nav">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid $gray-600">
                             <a class="navbar-brand opciones" href="./index.html">HOME</a>
@@ -35,7 +42,8 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 linksHtml">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle opciones" href="./paginas/Nuestrosproductos.html" id="navbarDropdown" role="button"
+                                        <a class="nav-link dropdown-toggle opciones"
+                                            href="./paginas/Nuestrosproductos.html" id="navbarDropdown" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             NUESTROS PRODUCTOS
                                         </a>
@@ -46,10 +54,11 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active opciones" aria-current="page" href="./paginas/Clientes.html">CLIENTES</a>
+                                        <a class="nav-link active opciones" href="./paginas/Clientes.html">CLIENTES</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link opciones" href="./paginas/Nuestrastiendas.html">NUESTRAS TIENDAS</a>
+                                        <a class="nav-link opciones" href="./paginas/Nuestrastiendas.html">NUESTRAS
+                                            TIENDAS</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link opciones" href="./paginas/Contactanos.html">CONTACTANOS</a>
@@ -63,10 +72,7 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="tlfno1">
-                        <p class="headerContacto"> TEL: 114323-0780</p>
-                    </div>
-                </nav>
+                </div>
             </header>
         </div>
         <div class="div2">
@@ -77,30 +83,40 @@
                     <img class="col-sm-12 mx-auto mainText" src="./Imagenes/Texto owner.jpg" alt="Historia del dueño">
                 </div>
             </main>
-
-            <h3>PRODUCTOS DESTACADOS</h3>
-
-            <section class="containerR">
-                <div class="container mainTablaProductos">
-                    <div class="row containerR">
-                        <div class="col-4">
-                            <a href=""><img class="rounded mainTablaImg" src="./Imagenes/Bouquet chico.jpg"
-                                    alt="Ramos"></a>
-                            <h3><b class="nombreProducto">Ramos</b></h3>
+            <div>
+                <h3>PRODUCTOS DESTACADOS</h3>
+                <section class="containerCards">
+                    <div class="container mainTablaDestacados">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Imagenes/ramorosas.jpg" class="card-img-top" alt="ramo de rosas">
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill span">
+                                $ 1.200
+                              </span>
+                            <div class="card-body">
+                                <p class="card-text">Arreglo "8 Rosas"</p>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <a href=""><img class="rounded mainTablaImg" src="./Imagenes/Arreglo floral.jpg"
-                                    alt="Arreglos"></a>
-                            <h3><b class="nombreProducto">Arreglos</b></h3>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Imagenes/arreglogirasoles.jpg" class="card-img-top" alt="arreglo girasoles">
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill span">
+                                $ 900
+                              </span>
+                            <div class="card-body">
+                                <p class="card-text">Arreglo "Girasoles"</p>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <a href=""><img class="rounded mainTablaImg" src="./Imagenes/Planta.jpg" alt="Plantas"></a>
-                            <h3><b class="nombreProducto">Plantas</b></h3>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Imagenes/arreglolirios.jpg" class="card-img-top" alt="arreglo lirios">
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill span">
+                                $ 1.500
+                              </span>
+                            <div class="card-body">
+                                <p class="card-text">Arreglo "Lillium"</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
         </div>
         <div class="div3">
             <footer class="footer">
