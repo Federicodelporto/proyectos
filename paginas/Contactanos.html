@@ -13,6 +13,11 @@
     <!--css-->
     <link rel="stylesheet" href="../style.css">
 
+    <!-- Imagen de Pestaña -->
+    <link rel="shortcut icon"
+        href="https://cdn-icons.flaticon.com/png/512/4592/premium/4592112.png?token=exp=1644080850~hmac=c95dd82d84140a76fa417421d2cebdf1" />
+
+
     <!--font Awesome-->
     <script src="https://kit.fontawesome.com/fc4ac0a0f8.js" crossorigin="anonymous"></script>
 
@@ -25,7 +30,8 @@
             <header class="header">
                 <div class="logoTel">
                     <div>
-                        <img class="headerImg" src="../Imagenes/Logo.jpg" alt="Logo Tienda de Flores">
+                        <a href="../index.html"><img class="headerImg" src="../Imagenes/Logo.jpg"
+                                alt="Logo Tienda de Flores"></a>
                     </div>
                     <div class="tlfno1">
                         <p class="headerContacto"> TEL: 114323-0780</p>
@@ -34,7 +40,6 @@
                 <div class="nav">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid $gray-600">
-                            <a class="navbar-brand opciones" href="../index.html">HOME</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -42,12 +47,17 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 linksHtml">
+                                    <li class="nav-item">
+                                        <a class="nav-link active opciones" href="../index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active opciones" href="./Nuestrosproductos.html">NUESTROS
+                                            PRODUCTOS</a>
+                                    </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle opciones" href=".Nuestrosproductos.html"
-                                            id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            NUESTROS PRODUCTOS
-                                        </a>
+                                        <a class="nav-link dropdown-toggle opciones" href="./Nuestrosproductos.html"
+                                            id="navbarDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false">CATEGORIAS</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item opciones" href="#">RAMOS</a></li>
                                             <li><a class="dropdown-item opciones" href="#">ARREGLOS</a></li>
@@ -66,7 +76,8 @@
                                     </li>
                                 </ul>
                                 <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                 </form>
                             </div>
@@ -75,17 +86,30 @@
                 </div>
             </header>
         </div>
-        <div class="div11">
+        <div class="container div11">
             <main class="main">
-                <div class="formularioContacto">
-                    <h2>Nos pondremos en contacto contigo</h2>
-                    <form action="">
-                        <input type="text" value="Escribe tu nombre" autocomplete="name"><br>
-                        <input type="tel" value="Telefono" autocomplete="tel"><br>
-                        <input type="email" value="Mail" autocomplete="email"><br>
-                        <input type="text" value="Mensaje"><br>
-                        <input type="Submit" value="Enviar Formulario">
-                    </form>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Por favor ingresa tu correo
+                        electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div> <br>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tus comentarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <br>
+                    <label for="exampleFormControlTextarea1" class="form-label">Que Productos deseas adquirir</label>
+                    <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Productos</option>
+                        <option value="1">Ramos</option>
+                        <option value="2">Arreglos</option>
+                        <option value="3">Plantas</option>
+                    </select>
+                    <br>
+                    <button type="button" class="btn btn-primary">Enviar Formulario</button>
+
                 </div>
             </main>
         </div>

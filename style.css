@@ -38,6 +38,7 @@ body{
     width: 100%;
     border: solid 2px;
     border-color: white;
+    z-index: 1;
 }
 
 .logoTel{
@@ -79,16 +80,26 @@ body{
 
 nav{
     margin-top: 10px;
-    width: 70%;
+    width: 88%;
 }
 
 .opciones{
-    font-family: Helvetica, Arial, sans-serif; 
-    font-size: 19px;
-    text-decoration: none;
     color: #f3eded;
     margin-left: 4px;
     margin-right: 4px;    
+}
+
+.nav-link{
+    font-family: Helvetica, Arial, sans-serif !important; 
+    font-size: 19px !important;
+    color:#3C3C3C !important;
+    width: 149px !important;
+    height: 60px !important;
+    justify-content: center !important;
+}
+
+.nav-link:hover{
+    color: #f3eded !important;
 }
 
 ul{
@@ -172,15 +183,17 @@ h3{
 .footer{
     display: flex;
     justify-content: center;
-    margin-top: -150px;
     background-color: #9FB0BF;
     width: 100%;
-    height: 100px;
 }
 
 footer a i{
     color: #3C3C3C;
     margin: 6px;
+}
+
+footer a i:hover{
+    color: #f3eded;
 }
 
 /*Productos*/
@@ -318,14 +331,19 @@ tr:hover td{
 } 
 .div11 { grid-area: 3 / 1 / 7 / 6; 
     height: 530px;
+    margin-top: 150px;
 }
 .div12 { grid-area: 7 / 1 / 8 / 6; 
     height: 40px;
 }
 
-.formularioContacto{
-    margin-top: 300px;
-    padding-top: 80px;
+.div11 .form-control{
+    width: 45% !important;
+    height: 5% !important;
+    }
+
+.div12 .footer{
+    margin-top: -200px;
 }
 
 /*Clientes*/
@@ -385,23 +403,23 @@ h4 {
 
 @keyframes opiniones {
     0%{
-        background-image: url(./Imagenes/opinion1.jpg);
+        background-image: url(./Imagenes/nike-logo.jpg);
     }
 
     25%{
-        background-image: url(./Imagenes/opinion2.jpg);
+        background-image: url(./Imagenes/logo\ raybann.jpg);
     }
 
     50%{
-        background-image: url(./Imagenes/opinion3.jpg);
+        background-image: url(./Imagenes/mc\ donalds.jpg);
     }
 
     75%{
-        background-image: url(./Imagenes/opinion4.jpg);
+        background-image: url(./Imagenes/antartica.jpg);
     }
 
     100%{
-        background-image: url(./Imagenes/opinion5.jpg);
+        background-image: url(./Imagenes/bakery.jpg);
     }
 }
 
@@ -437,6 +455,13 @@ nav{
 
 .opciones {
      font-size: 11px;
+}
+
+.nav-link{
+    width: 100px !important;
+    height: 50px !important;
+    font-size: 11px !important;
+    background-color: #9FB0BF !important;
 }
 
 .mainImg {
@@ -503,6 +528,10 @@ nav{
 .div14{
     flex-direction: column;
     height: 700px;
+}
+
+.div11{
+    margin-top: 90px;
 }
 
 }
