@@ -1,0 +1,60 @@
+.divP{
+    height: 1000px;
+    padding-top: 290px;
+}
+
+.mainTituloProductos{
+    font-family: Helvetica, Arial, sans-serif; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200px;
+    color: #3C3C3C;
+    cursor: default;
+}
+
+.mainTablaProductos{
+    font-family: Helvetica, Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200px;
+    color: #3C3C3C;
+}
+
+.nombreProducto{
+    cursor: default;
+}
+
+main ul div{
+    margin: 20px;
+}
+
+.mainTablaImg{
+    width: 350px; height: 350px;
+}
+
+.footerP{
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+    background-color: #9FB0BF;
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+    .divP{
+        padding-top: 200px;
+    }
+    
+    .nombreProducto{
+        margin-left: 100px;
+    }
+    
+    .footerP{
+        margin-top: 750px;
+    }
+}

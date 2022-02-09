@@ -403,15 +403,15 @@ h4 {
 
 @keyframes opiniones {
     0%{
-        background-image: url(./Imagenes/nike-logo.jpg);
+        background-image: url(./Imagenes/nike_logo.jpg);
     }
 
     25%{
-        background-image: url(./Imagenes/logo\ raybann.jpg);
+        background-image: url(./Imagenes/logoraybann.jpg);
     }
 
     50%{
-        background-image: url(./Imagenes/mc\ donalds.jpg);
+        background-image: url(./Imagenes/mcdonalds.jpg);
     }
 
     75%{

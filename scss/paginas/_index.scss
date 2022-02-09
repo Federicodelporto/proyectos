@@ -1,0 +1,259 @@
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { grid-area: 1 / 1 / 3 / 6; 
+    height: 120px;
+} 
+
+.div2 { grid-area: 3 / 1 / 7 / 6; 
+    height: 1030px;
+    padding-top: -50px;
+}
+
+.div3 { grid-area: 7 / 1 / 8 / 6; 
+}
+
+.header{
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #9FB0BF;
+    height: 272px;
+    width: 100%;
+    border: solid 2px;
+    border-color: white;
+    z-index: 1;
+}
+
+.logoTel{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.headerImg{
+    width: 300px;
+    height: 140px;
+}
+
+.tlfno1 {
+    display:flex;
+    align-items:center;
+    width: 200px;
+}
+
+.headerContacto{
+    background: radial-gradient(circle, white 0%, rgba(159,176,191,1) 100%);
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: bold;
+    color: #3C3C3C;
+    cursor: default;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+nav{
+    margin-top: 10px;
+    width: 88%;
+}
+
+.opciones{
+    color: #f3eded;
+    margin-left: 4px;
+    margin-right: 4px;    
+}
+
+.nav-link{
+    font-family: Helvetica, Arial, sans-serif !important; 
+    font-size: 19px !important;
+    color:#3C3C3C !important;
+    width: 149px !important;
+    height: 60px !important;
+    justify-content: center !important;
+        &:hover{
+            color: #f3eded !important;
+        }
+}
+
+ul{
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 19px;
+    font-weight: 200px;
+    font-style: normal;
+    text-align: center;
+    list-style: none;
+        ul{
+            position: absolute;
+            display: none;
+        }
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+ul ul li{
+    display: block;
+    border: 1px solid #3C3C3C;
+}
+
+a:hover {
+    background-color:#3C3C3C;
+}
+
+ul li:hover ul {
+    background-color:#3C3C3C;
+    display: block;
+}
+
+.main{
+    background-color: #9FB0BF;
+    margin-top: -190px;
+}
+
+.mainImg{
+    width: 400px; height: 380px;
+}
+
+.mainText{
+    width: 580px; height: 580px;
+    margin-top: -100px;
+}
+
+h3{
+    font-family: Helvetica, Arial, sans-serif; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200px;
+    color: #3C3C3C;
+    cursor: default;
+}
+
+.containerCards{
+    margin-top: 50px;
+}
+
+.mainTablaDestacados{
+    font-family: Helvetica, Arial, sans-serif; 
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200px;
+    color: #3C3C3C;
+}
+
+.span{
+    background-color: #E0C045;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #9FB0BF;
+    width: 100%;
+        a i{
+            color: #3C3C3C;
+            margin: 6px;
+        }
+}
+
+footer a i:hover{
+    color: #f3eded;
+}
+
+@media screen and (max-width: 1100px) {
+    .header{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .logoTel{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .headerImg{
+        width: 150px;
+        height: 70px;
+    }
+    
+    .headerContacto{
+         font-size: 10px;
+         width: 100px;
+    }
+    
+    nav{
+        width: 30%;
+    }
+    
+    .opciones {
+         font-size: 11px;
+    }
+    
+    .nav-link{
+        width: 100px !important;
+        height: 50px !important;
+        font-size: 11px !important;
+        background-color: #9FB0BF !important;
+    }
+    
+    .mainImg {
+         width: 400px;
+         height: 380px;
+         margin-top: -240px;
+         margin-left: 30px;
+    }
+    
+    .mainText{
+          width: 400px;
+          height: 400px;
+          margin-top: 0px;
+          margin-right: 40px;
+    }
+    
+    .containerI{
+          display: flex;
+          flex-direction: column;
+    }
+    
+    .containerR {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mainTablaDestacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card{
+        margin-top: 30px;
+    }
+     
+    .footer{
+        margin-top: 320px;
+    }
+}
