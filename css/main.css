@@ -97,16 +97,15 @@ ul {
   ul ul {
     position: absolute;
     display: none; }
+    ul ul li {
+      display: block;
+      border: 1px solid #3C3C3C; }
 
 li {
   display: inline-block;
   position: relative;
   font-size: 19px;
   margin-bottom: 20px; }
-
-ul ul li {
-  display: block;
-  border: 1px solid #3C3C3C; }
 
 a:hover {
   background-color: #3C3C3C; }
@@ -414,17 +413,15 @@ h4 {
   grid-area: 3 / 1 / 7 / 6;
   height: 530px;
   margin-top: 150px; }
+  .div11 .form-control {
+    width: 45% !important;
+    height: 5% !important; }
 
 .div12 {
   grid-area: 7 / 1 / 8 / 6;
   height: 40px; }
-
-.div11 .form-control {
-  width: 45% !important;
-  height: 5% !important; }
-
-.div12 .footer {
-  margin-top: -200px; }
+  .div12 .footer {
+    margin-top: -200px; }
 
 @media screen and (max-width: 1100px) {
   .formularioContacto {

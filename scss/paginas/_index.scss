@@ -101,6 +101,10 @@ ul{
         ul{
             position: absolute;
             display: none;
+                li{
+                    display: block;
+                    border: 1px solid #3C3C3C;
+                }
         }
 }
 
@@ -109,11 +113,6 @@ li{
     position: relative;
     font-size: 19px;
     margin-bottom: 20px;
-}
-
-ul ul li{
-    display: block;
-    border: 1px solid #3C3C3C;
 }
 
 a:hover {
