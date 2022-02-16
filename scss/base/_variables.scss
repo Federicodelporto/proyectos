@@ -1,10 +1,13 @@
 
+$estilos: (
+    color: #3c3c3c,
+    font-family: Helvetica, 
+);
 
-/* Lista */
-$colores: 
-#9FB0BF, 
-#3C3C3C, 
-#E0C045, 
-#f3eded;
-
-
+@mixin flex-center{
+    display:flex;
+    align-content:center;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+};

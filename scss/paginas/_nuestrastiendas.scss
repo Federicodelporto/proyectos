@@ -23,12 +23,12 @@
 }
 
 .mainTituloTiendas{
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: map-get($estilos, font-family);
     padding-bottom: 20px;
     text-align: center;
     font-size: 40px;
     font-weight: 200px;
-    color: #3C3C3C;
+    color: map-get($estilos, color);
     cursor: default;
 }
 
@@ -37,8 +37,8 @@
     width: 80%;
     height: 180px;
     border-collapse: collapse;
-    font-family: Helvetica, Arial, sans-serif; 
-    color: #3C3C3C;
+    font-family: map-get($estilos, font-family);
+    color: map-get($estilos, color);
     margin-left: 130px;
     margin-top: 10px;
     text-align: center;

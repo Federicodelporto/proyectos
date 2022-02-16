@@ -25,13 +25,13 @@
 }
 
 h4 {
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: map-get($estilos, font-family);
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 200px;
-    color: #3C3C3C;
+    color: map-get($estilos, color);
     cursor: default;
 }
 
