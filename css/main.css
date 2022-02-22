@@ -142,7 +142,8 @@ h1 {
   text-align: center;
   font-size: 25px;
   font-weight: 200px;
-  color: #3c3c3c; }
+  color: #3c3c3c;
+  cursor: default; }
 
 .span {
   background-color: #E0C045;
