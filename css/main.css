@@ -18,48 +18,32 @@ body {
 
 .div2 {
   grid-area: 3 / 1 / 7 / 6;
-  height: 1030px;
-  padding-top: -50px; }
+  height: 850px; }
 
 .div3 {
-  grid-area: 7 / 1 / 8 / 6; }
+  grid-area: 7 / 1 / 8 / 6;
+  height: 20px; }
 
 .header {
   position: fixed;
-  padding-top: 10px;
-  padding-left: 10px;
-  background-color: #9FB0BF;
-  height: 272px;
-  width: 100%;
-  border: solid 2px;
-  border-color: white;
-  z-index: 1; }
-
-.logoTel {
   display: flex;
   align-content: center;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%; }
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #9FB0BF;
+  height: 160px;
+  width: 100%;
+  border: solid 2px;
+  border-color: white;
+  z-index: 1; }
 
 .headerImg {
   width: 300px;
   height: 140px; }
-
-.tlfno1 {
-  display: flex;
-  align-items: center;
-  width: 200px; }
-
-.headerContacto {
-  background: radial-gradient(circle, white 0%, #9fb0bf 100%);
-  font-family: Helvetica;
-  font-size: 20px;
-  font-weight: bold;
-  color: #3c3c3c;
-  cursor: default; }
 
 .nav {
   display: flex;
@@ -70,7 +54,7 @@ body {
 
 nav {
   margin-top: 10px;
-  width: 88%; }
+  width: 85%; }
 
 .opciones {
   color: #f3eded;
@@ -81,7 +65,7 @@ nav {
   font-family: Helvetica !important;
   font-size: 19px !important;
   color: #3C3C3C !important;
-  width: 149px !important;
+  width: 130px !important;
   height: 60px !important;
   justify-content: center !important; }
   .nav-link:hover {
@@ -94,16 +78,10 @@ ul {
   font-style: normal;
   text-align: center;
   list-style: none; }
-  ul ul {
-    position: absolute;
-    display: none; }
-    ul ul li {
-      display: block;
-      border: 1px solid #3C3C3C; }
+  ul ul li {
+    border: 1px solid #3C3C3C; }
 
 li {
-  display: inline-block;
-  position: relative;
   font-size: 19px;
   margin-bottom: 20px; }
 
@@ -111,12 +89,26 @@ a:hover {
   background-color: #3C3C3C; }
 
 ul li:hover ul {
-  background-color: #3C3C3C;
-  display: block; }
+  background-color: #3C3C3C; }
+
+.tlfno1 {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  width: 300px;
+  height: 140px; }
+
+.headerContacto {
+  background: radial-gradient(circle, white 0%, #9fb0bf 100%);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3c3c3c;
+  cursor: default; }
 
 .main {
   background-color: #9FB0BF;
-  margin-top: -190px; }
+  margin-top: -200px; }
 
 .mainImg {
   width: 400px;
@@ -126,6 +118,9 @@ ul li:hover ul {
   width: 580px;
   height: 580px;
   margin-top: -100px; }
+
+.cards {
+  margin-top: -60px; }
 
 h1 {
   font-family: Helvetica;
@@ -145,14 +140,20 @@ h1 {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 200px;
   color: #3c3c3c; }
 
 .span {
-  background-color: #E0C045; }
+  background-color: #E0C045;
+  font-size: 25px; }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: -80px; }
+
+.redes {
   display: flex;
   align-content: center;
   text-align: center;
@@ -160,35 +161,48 @@ h1 {
   justify-content: center;
   background-color: #9FB0BF;
   width: 100%; }
-  .footer a i {
+  .redes a i {
     color: #3c3c3c;
     margin: 6px; }
 
-footer a i:hover {
+footer div a i:hover {
   color: #f3eded; }
+
+footer div p {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica;
+  cursor: default; }
 
 @media screen and (max-width: 1100px) {
   .header {
-    width: 100%;
-    height: 200px; }
-  .logoTel {
-    display: flex;
-    justify-content: space-around; }
+    height: 190px; }
   .headerImg {
     width: 150px;
     height: 70px; }
-  .headerContacto {
-    font-size: 10px;
-    width: 100px; }
-  nav {
+  .nav {
+    margin-left: 50px;
     width: 30%; }
-  .opciones {
-    font-size: 11px; }
   .nav-link {
-    width: 100px !important;
-    height: 50px !important;
-    font-size: 11px !important;
+    width: 80px !important;
+    height: 30px !important;
+    font-size: 10px !important;
     background-color: #9FB0BF !important; }
+  nav div div ul li {
+    margin-top: -15px;
+    margin-top: -15px; }
+  .tlfno1 {
+    margin-left: 40px;
+    width: 150px; }
+  .headerContacto {
+    font-size: 12px; }
+  .div2 {
+    height: 1200px; }
+  .main {
+    margin-top: -150px; }
   .mainImg {
     width: 400px;
     height: 380px;
@@ -199,6 +213,10 @@ footer a i:hover {
     height: 400px;
     margin-top: 0px;
     margin-right: 40px; }
+  h1 {
+    font-size: 25px; }
+  .containerCards {
+    margin-top: 0px; }
   .containerI {
     display: flex;
     flex-direction: column; }
@@ -214,12 +232,14 @@ footer a i:hover {
     flex-direction: column; }
   .card {
     margin-top: 30px; }
+  .span {
+    font-size: 20px; }
   .footer {
-    margin-top: 320px; } }
+    margin-top: 380px; } }
 
 .divP {
   height: 1000px;
-  padding-top: 290px; }
+  padding-top: 190px; }
 
 .mainTituloProductos {
   font-family: Helvetica;
@@ -252,21 +272,16 @@ main ul div {
   width: 350px;
   height: 350px; }
 
-.footerP {
-  display: flex;
-  justify-content: center;
-  margin-top: -150px;
-  background-color: #9FB0BF;
-  width: 100%;
-  height: 100px; }
+.pieDePagina {
+  margin-top: -220px; }
 
 @media screen and (max-width: 1100px) {
   .divP {
     padding-top: 200px; }
   .nombreProducto {
     margin-left: 100px; }
-  .footerP {
-    margin-top: 750px; } }
+  .pieDePagina {
+    padding-top: 380px; } }
 
 .grid3 {
   display: grid;
@@ -281,11 +296,11 @@ main ul div {
 
 .div8 {
   grid-area: 3 / 1 / 7 / 6;
-  height: 650px; }
+  height: 190px; }
 
 .div9 {
   grid-area: 7 / 1 / 8 / 6;
-  height: 30px; }
+  height: 140px; }
 
 .mainTiendas {
   background-color: #9FB0BF; }
@@ -350,7 +365,7 @@ tr:hover td {
 
 .div14 {
   grid-area: 3 / 1 / 7 / 6;
-  height: 480px;
+  height: 400px;
   display: flex;
   align-content: center;
   justify-content: space-evenly;
@@ -358,8 +373,8 @@ tr:hover td {
   flex-direction: row; }
 
 .div15 {
-  height: 200px;
-  margin-top: 110px; }
+  height: 170px;
+  margin-top: 80px; }
 
 h4 {
   font-family: Helvetica;
@@ -404,7 +419,9 @@ h4 {
 @media screen and (max-width: 1100px) {
   .div14 {
     flex-direction: column;
-    height: 700px; } }
+    height: 700px; }
+  .div15 {
+    margin-top: -200px; } }
 
 .grid4 {
   display: grid;

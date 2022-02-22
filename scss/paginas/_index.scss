@@ -12,53 +12,34 @@
 } 
 
 .div2 { grid-area: 3 / 1 / 7 / 6; 
-    height: 1030px;
-    padding-top: -50px;
+    height: 850px;
 }
 
-.div3 { grid-area: 7 / 1 / 8 / 6; 
+.div3 { grid-area: 7 / 1 / 8 / 6;
+    height: 20px; 
 }
 
 .header{
     position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
     padding-top: 10px;
     padding-left: 10px;
     background-color: #9FB0BF;
-    height: 272px;
+    height: 160px;
     width: 100%;
     border: solid 2px;
     border-color: white;
     z-index: 1;
 }
 
-.logoTel{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-
 .headerImg{
     width: 300px;
     height: 140px;
-}
-
-.tlfno1 {
-    display:flex;
-    align-items:center;
-    width: 200px;
-}
-
-.headerContacto{
-    background: radial-gradient(circle, white 0%, rgba(159,176,191,1) 100%);
-    font-family: map-get($estilos, font-family);
-    font-size: 20px;
-    font-weight: bold;
-    color: map-get($estilos, color);
-    cursor: default;
 }
 
 .nav{
@@ -67,7 +48,7 @@
 
 nav{
     margin-top: 10px;
-    width: 88%;
+    width: 85%;
 }
 
 .opciones{
@@ -80,7 +61,7 @@ nav{
     font-family: map-get($estilos, font-family) !important; 
     font-size: 19px !important;
     color:#3C3C3C !important;
-    width: 149px !important;
+    width: 130px !important;
     height: 60px !important;
     justify-content: center !important;
         &:hover{
@@ -96,18 +77,13 @@ ul{
     text-align: center;
     list-style: none;
         ul{
-            position: absolute;
-            display: none;
                 li{
-                    display: block;
                     border: 1px solid #3C3C3C;
                 }
         }
 }
 
 li{
-    display: inline-block;
-    position: relative;
     font-size: 19px;
     margin-bottom: 20px;
 }
@@ -118,12 +94,28 @@ a:hover {
 
 ul li:hover ul {
     background-color:#3C3C3C;
-    display: block;
+}
+
+.tlfno1 {
+    display:flex;
+    align-items:center;
+    margin-left: 120px;
+    width: 300px;
+    height: 140px;
+}
+
+.headerContacto{
+    background: radial-gradient(circle, white 0%, rgba(159,176,191,1) 100%);
+    font-family: map-get($estilos, font-family);
+    font-size: 20px;
+    font-weight: bold;
+    color: map-get($estilos, color);
+    cursor: default;
 }
 
 .main{
     background-color: #9FB0BF;
-    margin-top: -190px;
+    margin-top: -200px;
 }
 
 .mainImg{
@@ -133,6 +125,10 @@ ul li:hover ul {
 .mainText{
     width: 580px; height: 580px;
     margin-top: -100px;
+}
+
+.cards{
+    margin-top: -60px;
 }
 
 h1{
@@ -155,16 +151,23 @@ h1{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 200px;
     color: map-get($estilos, color);
 }
 
 .span{
     background-color: #E0C045;
+    font-size: 25px;
 }
 
 .footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+}
+
+.redes{
     @include flex-center;
     background-color: #9FB0BF;
     width: 100%;
@@ -174,44 +177,58 @@ h1{
         }
 }
 
-footer a i:hover{
+footer div a i:hover{
     color: #f3eded;
+}
+
+footer div p{
+    @include flex-center;
+    font-family: map-get($estilos, font-family);
+    cursor: default;
 }
 
 @media screen and (max-width: 1100px) {
     .header{
-        width: 100%;
-        height: 200px;
+        height: 190px;
     }
-    
-    .logoTel{
-        display: flex;
-        justify-content: space-around;
-    }
-    
+        
     .headerImg{
         width: 150px;
         height: 70px;
     }
-    
-    .headerContacto{
-         font-size: 10px;
-         width: 100px;
-    }
-    
-    nav{
+
+    .nav{
+        margin-left: 50px;
         width: 30%;
     }
+   
+   .nav-link{
+       width: 80px !important;
+       height: 30px !important;
+       font-size: 10px !important;
+       background-color: #9FB0BF !important;
+   }
+
+   nav div div ul li{
+       margin-top: -15px;
+       margin-top: -15px;
+   }
+
+   .tlfno1{
+    margin-left: 40px;
+    width: 150px;
+   }
     
-    .opciones {
-         font-size: 11px;
+    .headerContacto{
+         font-size: 12px;
     }
-    
-    .nav-link{
-        width: 100px !important;
-        height: 50px !important;
-        font-size: 11px !important;
-        background-color: #9FB0BF !important;
+
+    .div2{
+        height: 1200px;
+    }
+
+    .main{
+        margin-top: -150px;
     }
     
     .mainImg {
@@ -226,6 +243,14 @@ footer a i:hover{
           height: 400px;
           margin-top: 0px;
           margin-right: 40px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .containerCards{
+        margin-top: 0px;
     }
     
     .containerI{
@@ -246,8 +271,12 @@ footer a i:hover{
     .card{
         margin-top: 30px;
     }
+
+    .span{
+        font-size: 20px;
+    }
      
     .footer{
-        margin-top: 320px;
+        margin-top: 380px;
     }
 }
