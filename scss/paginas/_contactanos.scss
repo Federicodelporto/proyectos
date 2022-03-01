@@ -57,6 +57,17 @@
 .imgForm{
     width: 300px; height: 400px;
     border-radius: 15px;
+    animation-duration: 4s;
+    animation-name: aparece;
+}
+
+@keyframes aparece{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 1100px) {
